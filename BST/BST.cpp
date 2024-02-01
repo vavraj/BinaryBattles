@@ -232,15 +232,3 @@ int main()
     cout<<minValue(root)->data<<endl;
     return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-// hi there this is vaibhav
