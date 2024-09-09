@@ -81,7 +81,7 @@ vector<vector<int> > solveNQueens(int n)
 
 int main()
 {
-    vector<vector<int> >ans=solveNQueens(5);
+    vector<vector<int> >ans=solveNQueens(4);
     for(auto i: ans)
     {
         for(auto j:i)

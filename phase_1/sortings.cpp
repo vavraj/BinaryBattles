@@ -37,9 +37,6 @@ vector<int> selection_sort(vector<int> &arr)
             }
         }
         swap(arr[i], arr[minindex]);
-        for(int i=0;i<arr.size();i++)
-        cout<<arr[i]<<" ";
-        cout<<endl;
     }
     return arr;
 }
@@ -57,7 +54,7 @@ vector<int> bubble_Sort(vector<int> &arr)
                 swapped = true;
             }
         }
-        if (swapped == true)
+        if (swapped == false)
         {
             // already sorted
             break;

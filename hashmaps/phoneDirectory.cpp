@@ -82,10 +82,10 @@ public:
             }
         }
     }
-    vector<vector<string>> getSuggestion(string queryStr)
+    vector<vector<string> > getSuggestion(string queryStr)
     {
         trieNode *prev = root;
-        vector<vector<string>> output;
+        vector<vector<string> > output;
         string prefix;
         for (int i = 0; i < queryStr.length(); i++)
         {
@@ -109,7 +109,7 @@ public:
     }
 };
 
-vector<vector<string>> phoneDirectory(vector<string> &contactList, string &queryStr)
+vector<vector<string> > phoneDirectory(vector<string> &contactList, string &queryStr)
 {
     //    Write your code here.
     trie *t = new trie();
@@ -120,3 +120,5 @@ vector<vector<string>> phoneDirectory(vector<string> &contactList, string &query
     }
     return t->getSuggestion(queryStr);
 }
+
+

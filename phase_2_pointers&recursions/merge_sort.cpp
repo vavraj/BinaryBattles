@@ -65,7 +65,7 @@ void merge_sort(int *ar, int s, int e)
     // sorting left part
     merge_sort(ar, s, mid);
 
-    // sorting left part
+    // sorting right part
     merge_sort(ar, mid + 1, e);
 
     // merging sorted array
